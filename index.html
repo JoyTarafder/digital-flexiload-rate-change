@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drive Hisab</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.9.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white">
+    <header class="max-w-screen-xl mx-auto">
+        <div class="navbar bg-primary text-primary-content mt-7">
+            <button class="btn btn-ghost text-xl"><a href="https://digitalflexiload.net/" target="_blank">Digital Flexiload</a></button>
+         </div>
+    </header>
+
+    <main class="max-w-screen-xl mx-auto mt-8">
+        <h1 class="text-cyan-400 font-extrabold text-3xl mb-4">Family Pack</h1>
+        <div class="flex gap-4 mb-6">
+            <input type="text" id="rate" placeholder="Buy Offer" class="input input-bordered input-info w-full max-w-xs" />
+            <button class="btn btn-success" onclick="rateChange()">Rate</button>
+            <p class="text-red-600 font-bold" id="rate_val">0</p>
+        </div>
+        <h1 class="text-cyan-400 font-extrabold text-3xl mb-4">Drive Pack</h1>
+        <div class="flex gap-4 mb-6">
+            <input type="text" id="buyDriveRate" placeholder="Buy Offer" class="input input-bordered input-info w-full max-w-xs" />
+            <select class="select select-info w-full max-w-xs" id="selectRate">
+                <option disabled selected>Select Rate</option>
+                <option>999</option>
+                <option>899</option>
+                <option>799</option>
+                <option>699</option>
+                <option>599</option>
+              </select>
+              <button class="btn btn-success" onclick="commission()">Commission</button>
+            <p class="text-red-600 font-bold" id="commission">0</p>
+            <p class="text-red-600 font-bold" id="appRate">0</p>
+        </div>
+    </main>
+
+    <script src="./script.js"></script>
+</body>
+</html>
